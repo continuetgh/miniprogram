@@ -1,0 +1,45 @@
+<view class="page-body">
+  <view class="page-section">
+    <view class="weui-cells__title">违停地点</view>
+    <view class="weui-cells weui-cells_after-title">
+      <view class="weui-cell weui-cell_input">
+        <input class="weui-input" bindinput="setlocation" name="location" auto-focus placeholder="请输入违停地点（例如：信工楼固定停车位）"/>
+      </view>
+    </view>
+  </view>
+  <view class="page-section">
+    <view class="weui-cells__title">车牌号</view>
+    <view class="weui-cells weui-cells_after-title">
+      <view class="weui-cell weui-cell_input">
+        <input class="weui-input" bindinput="setcarnumber" name="carnumber" maxlength="10" placeholder="请输入车牌号（例如：浙A5R712)" />
+      </view>
+    </view>
+  </view>
+  <view class="page-section">
+    <view class="weui-cells__title">违停情况描述（100字以内）{{inputValue}}</view>
+    <view class="weui-cells weui-cells_after-title">
+      <view class="weui-cell weui-cell_input">
+        <input class="weui-input" bindinput="setdescription" name="description" maxlength="100" placeholder="参考文本：于xxx发现违停，具体情况：xxx"/>
+      </view>
+    </view>
+  </view>
+
+  <view class="page-section">
+    <view class="weui-cells__title">违停图片（最多上传4张）</view>
+    <view class="weui-cells weui-cells_after-title">
+      <view class="weui-cell weui-cell_input">
+        <view class="weui-cell__bd" style="margin: 30rpx 0" >
+          <van-uploader name="imageUrl" file-list="{{ fileList }}" bind:after-read="afterRead"  bind:before-read="beforeRead" deletable="{{ true }}" max-count="4" preview-image="true">
+          </van-uploader>
+        </view>
+      </view>
+    </view>
+  </view>
+
+  <view class="btn-area">
+    <!-- 使用 bindtap 绑定按钮点击事件 -->
+    <button style="margin: 10rpx 10rpx" type="primary" bind:tap="send">提交</button>
+    <button style="margin: 10rpx 10rpx"  type="default" bind:tap="reset">重置</button>
+  </view>
+  <button style="margin: 10rpx 10rpx" type="primary" bind:tap="tocheck">检测</button>
+</view>

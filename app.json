@@ -1,0 +1,67 @@
+{
+  "pages": [
+    "pages/login/login",
+    "pages/home/home",
+    "pages/park/park",
+    "pages/complain/complain",
+    "pages/index/index",
+    "pages/upload/upload",
+    "pages/forum/forum",
+    "pages/data/data",
+    "pages/register/register",
+    "pages/camera/camera",
+    "pages/camera/display",
+    "pages/check/check",
+    "pages/localcheck/localcheck",
+    "pages/logs/logs"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#07c160",
+    "navigationBarTitleText": "智慧停车",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "position": "bottom",
+    "borderStyle":"black",
+    "color": "#bfc1ab",
+    "selectedColor": "#13b11c",
+    "backgroundColor": "white",
+    "list": [
+      {
+        "pagePath": "pages/home/home",
+        "iconPath": "image/icon_home.png",
+        "selectedIconPath": "image/icon_home_active.png",
+        "text":"首页"
+      },
+      {
+        "pagePath": "pages/upload/upload",
+        "iconPath": "image/icon_complain.png",
+        "selectedIconPath":"image/icon_complain_active.png",
+        "text":"违停投诉"
+      },
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "image/icon_person.png",
+        "selectedIconPath": "image/icon_person_active.png",
+        "text":"我的"
+      }
+    ]
+  },
+  "componentFramework": "glass-easel",
+  "sitemapLocation": "sitemap.json",
+  "lazyCodeLoading": "requiredComponents",
+  "usingComponents": {
+    "van-button": "@vant/weapp/button/index",
+    "van-field": "@vant/weapp/field/index",
+    "van-cell": "@vant/weapp/cell/index",
+    "van-cell-group": "@vant/weapp/cell-group/index",
+    "van-icon": "@vant/weapp/icon/index"
+  },
+  "plugins": {
+    "echarts": {
+      "version": "1.0.2",
+      "provider": "wx1db9e5ab1149ea03"
+    }
+  }
+}

@@ -1,0 +1,41 @@
+<!--pages/register/register.wxml-->
+
+<view class="page-body">
+<view class="page-section">
+    <view class="weui-cells__title">姓名</view>
+    <view class="weui-cells weui-cells_after-title">
+      <view class="weui-cell weui-cell_input">
+        <input class="weui-input" name="name" bindinput="setname"  auto-focus placeholder="例如：张三"/>
+      </view>
+    </view>
+  </view>
+  <view class="page-section">
+    <view class="weui-cells__title">身份证号</view>
+    <view class="weui-cells weui-cells_after-title">
+      <view class="weui-cell weui-cell_input">
+        <input class="weui-input" name="identity" bindinput="setidentity" maxlength="18" placeholder="请输入正确的18位身份证号" />
+      </view>
+    </view>
+  </view>
+  <view class="page-section">
+    <view class="weui-cells__title">车辆类型</view>
+    <view class="weui-cells weui-cells_after-title">
+      <view class="weui-cell weui-cell_input">
+        <input class="weui-input"  name="type" bindinput="settype" maxlength="10"  placeholder="机动车/非机动车"/>
+      </view>
+    </view>
+  </view>
+  <view class="page-section">
+    <view class="weui-cells__title">车牌号</view>
+    <view class="weui-cells weui-cells_after-title">
+      <view class="weui-cell weui-cell_input">
+        <input class="weui-input" name="carnumber" bindinput="setcarnumber" placeholder="例如：沪C3R567" />
+      </view>
+    </view>
+  </view>
+  <view class="btn-area">
+        <!-- 使用 bindtap 绑定按钮点击事件 -->
+    <button style="margin: 10rpx 10rpx" type="primary" bind:tap="send">提交</button>
+    <button style="margin: 10rpx 10rpx"  type="default" bind:tap="reset">重置</button>
+  </view>
+</view>

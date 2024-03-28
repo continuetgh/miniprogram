@@ -1,0 +1,5 @@
+<!--pages/camera/display.wxml-->
+<image src="{{photoUrl}}" mode="aspectFit"></image>
+<view>发现位置：</view>
+<button bindtap="uploadPhoto" style="margin: 10rpx 10rpx"type="primary">上传照片</button>
+<button bindtap="sendToCheck" style="margin: 10rpx 10rpx"type="default">提交检测</button>

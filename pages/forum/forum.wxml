@@ -1,0 +1,14 @@
+<!--pages/forum/forum.wxml-->
+
+<view>
+<view class="title">
+<image class="img" src="/image/icon_forum.png"></image>
+<view class="text">车辆论坛</view>
+</view>
+<view class="pie">
+<vieww class="pietext">帖子标题：</vieww>
+<view class="pietext">帖子内容：（点击了解详细内容）</view>
+<VIEW class="pietext">发表时间：2024-03-07</VIEW>
+<view class="pietext" >评论：30 点赞：25 喜欢：50</view>
+</view>
+</view>

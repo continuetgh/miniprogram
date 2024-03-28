@@ -1,0 +1,67 @@
+/* pages/home/home.wxss */
+/* 设置swiper组件的宽高 */
+@import "/lib/weui.wxss";
+.logo{
+  width:100%;
+  height: 180rpx;
+  margin: 2rpx;
+}
+swiper{
+  width: 100%;
+  height: 450rpx;
+}
+/* 设置swiper组件里面图片的宽高 */
+swiper image{
+  width: 100%;
+  height: 450rpx;
+}
+.head{
+  flex-wrap: nowrap;
+  font-size: 14pt;
+  color: #777;
+  line-height: 110%;
+  font-weight: bold;
+  width: 100%;
+  padding: 20rpx;
+  background-color: #f3f3f3;
+  margin: 5rpx 0rpx;
+}
+.function{
+  width: 100%;
+  height:260rpx;
+  padding: 6px;
+  background-color: #fff;
+  margin-top: 9rpx;
+  border: 1rpx solid #f3f3f3;
+  display: flex;
+ flex-direction: row;
+ justify-content: space-between;
+}
+.block-function{
+  width:25%;
+  height: 240rpx;
+  padding: 8rpx;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 20rpx;
+  position: relative;
+  align-items: center;
+}
+.icon-function{
+  display:flex;
+  padding: 4rpx;
+  width: 130rpx;
+  height: 130rpx;
+  align-items: center;
+  flex-direction: column;
+}
+.text-function{
+  font-size: 14pt;
+  color: #555;
+  display: flex;
+  align-items: center;
+  margin: 0rpx;
+  padding: 0rpx;
+}

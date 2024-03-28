@@ -1,0 +1,6 @@
+<!--pages/localcheck/localcheck.wxml-->
+<view class="container">
+  <canvas type="2d" canvas-id="myCanvas"></canvas>
+  <button bindtap="chooseImage">打开图片</button>
+  <button bindtap="sendToCheck">提交检测</button>
+</view>

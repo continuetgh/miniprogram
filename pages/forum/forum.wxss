@@ -1,0 +1,36 @@
+/* pages/forum/forum.wxss */
+.title{
+  width: 100%;
+  height: 300rpx;
+  margin-top: 0rpx;
+  border: solid 1rpx #666666;
+  padding: 10rpx;
+}
+.img{
+  width: 200rpx;
+  height:200rpx;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.text{
+  font-size: 20pt;
+  font-weight: 100;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.pie{
+  width:100%;
+  height:220rpx;
+  border-style: solid;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+.pietext{
+  font-size: 14pt;
+  font-weight:300;
+}

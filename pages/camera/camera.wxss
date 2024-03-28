@@ -1,0 +1,31 @@
+/* pages/camera/camera.wxss */
+.camera{
+  width: 100%;
+  height: 80%;
+  border: solid 1rpx;
+}
+.takephoto{
+  width: 100px;
+  height: 100px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+.checkout{
+  width: 100px;
+  height: 100px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+.horizontal-line {
+  width: 100%;
+  height: 1px;
+  background-color: black;
+}
+
+.vertical-line {
+  width: 1px;
+  height: 100%;
+  background-color: black;
+}

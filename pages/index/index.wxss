@@ -1,0 +1,96 @@
+/**index.wxss**/
+page {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.out{
+  width: 300rpx;
+  height:100rpx;
+  display: flex;
+  justify-content: center; /* 水平居中 */
+  align-items: center; /* 垂直居中 */
+}
+.wenzi{
+  text-align: center; /* 文字水平居中 */
+}
+
+.scrollarea {
+  flex: 1;
+  overflow-y: hidden;
+}
+
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #aaa;
+  width: 80%;
+}
+
+.userinfo-avatar {
+  overflow: hidden;
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+.usermotto {
+  margin-top: 200px;
+}
+
+.avatar-wrapper {
+  padding: 0;
+  width: 56px !important;
+  border-radius: 8px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.avatar {
+  display: block;
+  width: 56px;
+  height: 56px;
+}
+
+.nickname-wrapper {
+  display: flex;
+  width: 100%;
+  padding: 16px;
+  box-sizing: border-box;
+  border-top: .5px solid rgba(0, 0, 0, 0.1);
+  border-bottom: .5px solid rgba(0, 0, 0, 0.1);
+  color: black;
+}
+
+.nickname-label {
+  width: 105px;
+}
+
+.nickname-input {
+  flex: 1;
+}
+
+.le-img {
+  width: 100%;
+  display: block;
+  transform: scale(0.8);
+  transition: all 0.3s ease;
+  border-radius: 6px;
+  box-shadow: 0 0 6rpx rgba(50, 50, 50, 0.4);
+  -webkit-filter: blur(2rpx);
+  -moz-filter: blur(2rpx);
+  -ms-filter: blur(2rpx);
+  -o-filter: blur(2rpx);
+  filter: blur(2rpx);
+}
+.le-img.le-active {
+  transform: scale(1);
+  box-shadow: none;
+  -webkit-filter: blur(0);
+  -moz-filter: blur(0);
+  -ms-filter: blur(0);
+  -o-filter: blur(0);
+  filter: blur(0);
+}

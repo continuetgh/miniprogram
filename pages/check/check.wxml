@@ -1,0 +1,12 @@
+<!--pages/check/check.wxml-->
+<text>pages/check/check.wxml</text>
+<view class="container">
+  <view>
+    <image src="{{avatarUrl}}" class=".img" bind:tap="imgClick"></image>
+    <button form-type="submit" class=".btn_submit" bind:tap="submitimg">开始检测</button>
+  </view>
+  <view class="text-container">
+    <view>{{name_and_nums}}</view>
+    <view class="text" wx:for="{{names}}">{{item.name}}: {{item.value}} </view>
+  </view>
+</view>

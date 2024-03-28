@@ -1,0 +1,85 @@
+{
+  "description": "项目私有配置文件。此文件中的内容将覆盖 project.config.json 中的相同字段。项目的改动优先同步到此文件中。详见文档：https://developers.weixin.qq.com/miniprogram/dev/devtools/projectconfig.html",
+  "projectname": "parking",
+  "setting": {
+    "compileHotReLoad": false,
+    "urlCheck": false,
+    "bigPackageSizeSupport": true
+  },
+  "condition": {
+    "miniprogram": {
+      "list": [
+        {
+          "name": "localcheck",
+          "pathName": "pages/localcheck/localcheck",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "display",
+          "pathName": "pages/camera/display",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "camera",
+          "pathName": "pages/camera/camera",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "forum",
+          "pathName": "pages/forum/forum",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "register",
+          "pathName": "pages/register/register",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "logs",
+          "pathName": "pages/logs/logs",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "park",
+          "pathName": "pages/park/park",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "home",
+          "pathName": "pages/home/home",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "upload",
+          "pathName": "pages/upload/upload",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "index",
+          "pathName": "pages/index/index",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        }
+      ]
+    }
+  }
+}

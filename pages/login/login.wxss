@@ -1,0 +1,4 @@
+/* pages/login/login.wxss */
+.van-button--primary{
+  width: 100%;
+}

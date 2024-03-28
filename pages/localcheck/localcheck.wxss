@@ -1,0 +1,13 @@
+/* pages/localcheck/localcheck.wxss */
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* 设置容器高度为页面高度 */
+}
+
+canvas {
+  width: 300px; /* 设置 Canvas 宽度 */
+  height: 600px; /* 设置 Canvas 高度 */
+}

@@ -1,0 +1,22 @@
+<!--index.wxml-->
+<!-- <swiper previous-margin='200rpx' next-margin='200rpx' bindchange="swiperChange" style='height:{{swiperH}}'  circular>
+  <swiper-item wx:for='{{imgList}}' wx:key='{{index}}'>
+    <image class='le-img {{nowIdx==index?"le-active":""}}' bindload='getHeight' src='{{item}}' style='height:{{swiperH}};'></image>
+  </swiper-item>
+</swiper> -->
+<view style="margin: 20rpx 0;">
+  <view style="margin: 40rpx; text-align: center;">
+    <van-icon name="smile-o" size="50px" color="orange" />
+  </view>
+  <van-cell-group inset>
+    <van-cell title="用户名" value="{{ user.username }}" />
+    <van-cell title="昵称" value="{{ user.nickname }}" />
+    <van-cell title="部门" value="{{ user.department }}" />
+  </van-cell-group>
+  <view>
+    <button class="out" type="primary" bind:click="logout" >
+    退出登录
+    </button>
+  </view>
+</view>
+

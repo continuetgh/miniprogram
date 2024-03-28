@@ -1,0 +1,36 @@
+<!--pages/home/home.wxml-->
+<view>
+    <view>
+        <image class="logo" src="/image/logo.png"></image>
+    </view>
+    <swiper indicator-dots="true" autoplay="true" interval="3000">
+      <swiper-item>
+          <image class="image" src="../../image/parking04.png" mode="aspectFill"></image>
+      </swiper-item>
+      <swiper-item>
+          <image class="image" src="../../image/parking05.jpeg" mode="aspectFill"></image>
+      </swiper-item>
+    </swiper>
+    <view class="head">| 热门功能
+    </view>
+    <view class='function'>
+        <view class="block-function">
+          <image bind:tap="gotoCar" class="icon-function" src="/image/icon_car.png"></image>
+          <view  class="text-function" >车位查询</view>
+        </view>
+        <view class="block-function">
+          <image bind:tap="gotoData" class="icon-function" src="/image/icon_data.png"></image>
+          <view  class="text-function" >数据中心</view>
+        </view>
+        <view class="block-function">
+          <image bind:tap="gotoRegister" class="icon-function" src="/image/icon_claim.png"></image>
+          <view  class="text-function" >车辆登记</view>
+        </view>
+        <view class="block-function">
+          <image bind:tap="gotoForum" class="icon-function" src="/image/icon_forum.png"></image>
+          <view  class="text-function" >论坛交流</view>
+        </view>
+    </view>
+</view>
+
+

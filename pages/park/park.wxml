@@ -1,0 +1,20 @@
+<!--pages/park/park.wxml-->
+<!-- <text>pages/park/park.wxml</text>
+<text bind:animationend="onPullDownRefresh">上海</text> -->
+<view>
+  <map class="map" id="myMap" longitude="{{longitude}}" bindtap="bindtap" latitude="{{latitude}}" scale="14"  polygons="{{polygons}}" show-location  markers="{{markerArray}}">
+  </map>
+  <view class="headline">| 临港校区各停车区域泊位信息</view>
+  <view>
+    <van-dropdown-menu>
+      <van-dropdown-item value="{{ value1 }}" options="{{ option1 }}" />
+      <van-dropdown-item value="{{ value2 }}" options="{{ option2 }}" />
+    </van-dropdown-menu>
+  </view>
+  <view class="park-block" wx:for="{{itemList}}" wx:key="id">
+    <view class="name">| {{item.name}}</view>
+    <view class="number">泊位数量：{{item.number}}/{{item.quantity}}</view>
+    <view class="text">地址：{{item.location}}</view>
+    <view>收费标准：{{item.standard}}</view>
+  </view>
+</view>
