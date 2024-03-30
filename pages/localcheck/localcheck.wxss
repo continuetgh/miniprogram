@@ -11,3 +11,19 @@ canvas {
   width: 300px; /* 设置 Canvas 宽度 */
   height: 600px; /* 设置 Canvas 高度 */
 }
+.img_size_box{
+  width: 80%;
+  margin-top: 10px;
+  margin-left: 10%;
+  margin-right: 10%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.img_size{
+  text-align: center;
+  object-fit: cover;
+}
+.anniu{
+  margin-top: 10px;
+}

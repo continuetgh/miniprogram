@@ -1,4 +1,4 @@
-// pages/data/data.js
+// pages/inform/inform.js
 Page({
 
   /**

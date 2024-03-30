@@ -1,6 +1,8 @@
 <!--pages/localcheck/localcheck.wxml-->
 <view class="container">
-  <canvas type="2d" canvas-id="myCanvas"></canvas>
-  <button bindtap="chooseImage">打开图片</button>
-  <button bindtap="sendToCheck">提交检测</button>
+  <view class="img_size_box">
+    <image class="img_size" src="{{photoUrl}}" mode="aspectFill" bind:tap="fangda"></image>
+  </view>
+  <button class="anniu" bind:tap="selectPicture">选择图片</button>
+  <button bind:tap="sendToCheck">提交检测</button>
 </view>

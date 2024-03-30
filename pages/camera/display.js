@@ -9,13 +9,13 @@ Page({
     photoUrl:'',
   },
   fangda:function(e){
-    console.log(e.currentTarget.dataset.url)
+    console.log(this.data.photoUrl); // 打印图片路径，确认是否正确
     wx.previewImage({
-      current:e.currentTarget.dataset.url,
-      urls: e.currentTarget.dataset.urls,
+      current: this.data.photoUrl, // 使用 photoUrl
+      urls: [this.data.photoUrl], // 将图片路径放入数组中，这里只有一张图片
       success:(res)=>{
       },
-    })
+    });
   },
 
   selectPicture:function(e){

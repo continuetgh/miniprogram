@@ -1,0 +1,27 @@
+/* pages/user/user.wxss */
+/* pages/user/user.wxss */
+
+.logout{
+  margin-left: 280rpx;
+  margin-top: auto;
+}
+.top_a {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 10rpx;
+  height: 170rpx;
+
+}
+.top_imgx {
+  margin-top: 20rpx;
+  width: 40%;
+  height: 140rpx;
+  display: flex;
+  flex-direction: column;
+}
+.top_img { 
+  margin: 0 auto;
+  width: 180rpx;
+  height: 150rpx;
+}

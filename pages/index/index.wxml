@@ -9,9 +9,9 @@
     <van-icon name="smile-o" size="50px" color="orange" />
   </view>
   <van-cell-group inset>
-    <van-cell title="用户名" value="{{ user.username }}" />
-    <van-cell title="昵称" value="{{ user.nickname }}" />
-    <van-cell title="部门" value="{{ user.department }}" />
+    <van-cell title="用户名" value="{{ item.username }}" />
+    <van-cell title="昵称" value="{{ item.nickname }}" />
+    <van-cell title="部门" value="{{ item.department }}" />
   </van-cell-group>
   <view>
     <button class="out" type="primary" bind:click="logout" >

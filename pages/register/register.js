@@ -1,3 +1,7 @@
+import { request } from '../../request/index'
+
+const app = getApp()
+
 Page({
 
   /**

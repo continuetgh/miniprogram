@@ -1,7 +1,7 @@
 <!--pages/camera/camera.wxml-->
 <view>
 
-<camera device-position="back" flash="off" binderror="error" style="width: 100%; height: 600px;"></camera>
+<camera device-position="back" flash="off" binderror="error" style="width: 100%; height: 500px;"></camera>
 </view>
 <button type="primary" bindtap="takePhoto">拍照</button>
 <button type="default" bind:tap="tolocal">本地检测</button>

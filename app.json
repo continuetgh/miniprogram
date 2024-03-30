@@ -5,14 +5,15 @@
     "pages/park/park",
     "pages/complain/complain",
     "pages/index/index",
+    "pages/inform/inform",
     "pages/upload/upload",
     "pages/forum/forum",
-    "pages/data/data",
     "pages/register/register",
     "pages/camera/camera",
     "pages/camera/display",
     "pages/check/check",
     "pages/localcheck/localcheck",
+    "pages/user/user",
     "pages/logs/logs"
   ],
   "window": {
@@ -35,13 +36,13 @@
         "text":"首页"
       },
       {
-        "pagePath": "pages/upload/upload",
+        "pagePath": "pages/complain/complain",
         "iconPath": "image/icon_complain.png",
         "selectedIconPath":"image/icon_complain_active.png",
         "text":"违停投诉"
       },
       {
-        "pagePath": "pages/index/index",
+        "pagePath": "pages/user/user",
         "iconPath": "image/icon_person.png",
         "selectedIconPath": "image/icon_person_active.png",
         "text":"我的"
