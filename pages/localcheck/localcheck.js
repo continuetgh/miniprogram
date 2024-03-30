@@ -7,6 +7,8 @@ Page({
   data: {
     tempFilePaths: '', // 用于存储图片路径
     photoUrl:'',
+    detectionResults:'',
+
   },
   /**
    * 生命周期函数--监听页面加载
@@ -82,19 +84,23 @@ Page({
       },
       success: (res) => {
         console.log(res.data); // 上传成功后返回的数据，即检测结果
-        const detectionResult = JSON.parse(res.data);
-        let title = '检测结果：';
-        if (detectionResult.objects && detectionResult.objects.length > 0) {
-          title += detectionResult.objects.join(', ');
+        const detectionResults = JSON.parse(res.data);
+      
+        let title = '结果：';
+        if (detectionResults && detectionResults.length > 0) {
+          const objectStatuses = detectionResults.map(result => result.status);
+          title += objectStatuses.join(', ');
         } else {
           title += '未检测到任何物体';
         }
+      
         wx.showToast({
           title: title,
-          icon: detectionResult.objects && detectionResult.objects.length > 0 ? 'success' : 'none',
-          duration: 3000
+          icon: detectionResults && detectionResults.length > 0 ? 'success' : 'none',
+          duration: 10000
         });
       },
+      
       fail: function (err) {
         console.error('上传失败', err);
         wx.showToast({
